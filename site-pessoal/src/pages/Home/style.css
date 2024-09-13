@@ -1,0 +1,44 @@
+
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 6em;
+  
+  padding-top: 2em;
+}
+
+a {
+  padding-left: 3em;
+ text-decoration: none; 
+ color: plum;
+}
+
+.slogan-nav-bar{
+  width: 15%;
+}
+
+.conteiner-frases {
+  background-color: rgba(128, 128, 128, 0.404);
+  height: 50%;
+  width: 50%;
+}
+
+.imagem-inicial {
+  width: 50%;
+  border-radius: 10px;
+  
+  
+}
+
+.conteiner {
+  display: flex;
+  border: 1px solid blue;
+  justify-content: space-around;
+}
+
+.conteiner > h1 {
+  border: 1px solid gray; 
+  
+  align-items: center;
+  justify-content: space-between;
+}
