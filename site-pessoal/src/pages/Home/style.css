@@ -1,12 +1,10 @@
-
-
-
 body {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #2A2033, #212121, #3F3945);
 }
+
 
 
 /* Começo do Header */
@@ -16,7 +14,10 @@ header {
   align-items: center;
   background-color: #2A2033;
   padding: 2em;
+  border: 1px solid white;
+  
 }
+
 
 a {
   text-decoration: none;
@@ -25,7 +26,10 @@ a {
   display: inline-block;
   margin-right: 40px; 
   transition: color 0.4s ease;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
 }
+
+
 
 a::after {
   content: "";
@@ -60,55 +64,63 @@ a:hover::after {
   display: flex;
   align-items: center; /* Alinha a imagem e o texto verticalmente */
   gap: 10px; /* Espaço entre o h2 e a imagem */
+  
 }
 
+.perfil-header > h2 {
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
+}
 
 /*Final do header*/
 
 /*Começo do main*/
 .home {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  
+  position: relative; /* Torna o container posicionado relativamente para conter o texto absoluto */
+}
+
+.frase {
+  position: absolute; /* Faz o texto ficar sobre a imagem */
+  color: white;
+  text-align: center;
+  z-index: 1; /* Garante que o texto fique acima da imagem */
+}
+
+.frase > h1 {
+  font-size: 3em;
+  margin: 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
 }
 
 .frase > p {
-  margin-left: 60px;
-  font-size: 25px;
-  
+  font-size: 1.5em;
+  margin: 10px 0;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
 }
 
-
+.img-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+  z-index: 0; /* Mantém a imagem no fundo */
+}
 
 main {
-  margin-top: 50px;
+  border: 1px solid white;
+  
 }
 
 .sobre_mim {
   background-color: #212121;
 }
 
-.sobre_mim > h1 {
+.container-sobre > h1 {
   display: flex;
   justify-content: center;
-  margin-top: 4em;
-  
-}
-
-.container1 {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px;
-  margin-top: 5em;
-}
-
-.mini-texto > p {
-  
-  color: white;
-  font-size: 20px;
-  margin: 0 25% 0 25%;
-  border: 1px solid white
+  padding: 2em;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
 }
 
 p, h1, h2 {
@@ -119,7 +131,30 @@ h1 {
   font-size: 3em;
 }
 
+.texto-me > p{
+  color:black;
+  padding: 0 10em 0 10em;
+  text-align: justify;
+}
 
+.texto-me > h2{
+  color:black;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.caixa {
+  background-color: rgba(255, 255, 255, 0.822);
+  margin: 0 300px 0 300px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  
+}
+
+.cards
 
 /*Final do main*/
 
