@@ -107,11 +107,6 @@ a:hover::after {
   z-index: 0; /* Mantém a imagem no fundo */
 }
 
-main {
-  border: 1px solid white;
-  
-}
-
 .sobre_mim {
   background-color: #212121;
 }
@@ -154,7 +149,20 @@ h1 {
   
 }
 
-.cards
+.cards {
+  background-color: antiquewhite;
+  width: 15em;
+  height: 15em;
+  border: 1px solid white;
+  display: flex;
+  margin: 10px;
+}
+
+.curiosidades {
+  flex-direction: initial;
+  display: flex;
+  
+}
 
 /*Final do main*/
 

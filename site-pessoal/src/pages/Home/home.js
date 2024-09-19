@@ -1,27 +1,6 @@
-import './style.css'
-
-function Home() {
-  return (
-    <div>
-      
-      {/*Cabeça do site */}
-      <header>
-        <div className='perfil-header'>
-          <h2>Phablo Roberto</h2>
-          <img src="/public/perfilTest.jpeg" alt="" className='mini-foto'/>
-        </div>
-        {/*Links do site*/}
-        <nav>
-          <a href="#Home">Home</a>
-          <a href="#sobre_mim">Sobre mim</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#Contatos">Contato</a>
-        </nav>
-      </header>
-      
-      {/*Copo do site */}
-
-      <main>
+export default function Home() {
+    return (
+        <main>
         {/*Home do site*/}
         <div className="home">
           {/*imagem da pagina inicial */}
@@ -70,8 +49,6 @@ function Home() {
 
         </div>
       </main>
-    </div>
-  )
+    )
 }
 
-export default Home;
