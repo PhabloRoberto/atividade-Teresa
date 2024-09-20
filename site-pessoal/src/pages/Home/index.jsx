@@ -1,3 +1,4 @@
+import Final from '../componets/footer/footer';
 import Curiosidades from '../componets/curiosidades/curiosidades';
 import Cards from '../componets/cards/cards';
 import Body from '../componets/main/body';
@@ -31,7 +32,9 @@ function Home() {
       <div>
         <Cards/>
       </div>
-      
+      <div>
+        <Final/>
+      </div>
     </div>
   )
 }

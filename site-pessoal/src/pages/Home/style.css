@@ -200,9 +200,12 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  background-color: #1C1124;
 }
 
-
+.fundo {
+  background-color: #1C1124;
+}
 
 @media (max-width: 500px) {
   a {
@@ -284,6 +287,7 @@ h1 {
   justify-content: space-around;  
   gap: 20px; 
   padding: 20px;
+  background-color: #1C1124;
 }
 
 /* Estilo dos cards */
@@ -308,6 +312,10 @@ h1 {
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.buttom {
+  padding-left: 30px;
 }
 
 
