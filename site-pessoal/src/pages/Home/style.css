@@ -49,9 +49,9 @@ a:hover::after {
 
 .mini-foto {
   border: 1px solid white;
-  width: 30px; /* Tamanho menor da imagem */
-  height: 30px; /* Garante que a altura seja proporcional */
-  border-radius: 50%; /* Imagem redonda */
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
 }
 
 .mini-container {
@@ -62,14 +62,16 @@ a:hover::after {
 
 .perfil-header {
   display: flex;
-  align-items: center; /* Alinha a imagem e o texto verticalmente */
-  gap: 10px; /* Espaço entre o h2 e a imagem */
+  align-items: center; 
+  gap: 10px; 
   
 }
 
 .perfil-header > h2 {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
 }
+
+
 
 /*Final do header*/
 
@@ -78,14 +80,27 @@ a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Torna o container posicionado relativamente para conter o texto absoluto */
+  position: relative; 
+}
+
+.texto-com-imagem {
+  display: flex;
+  align-items: center; 
+  text-align: left; 
+}
+
+.perfil-img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+  margin-right: 20px; 
 }
 
 .frase {
-  position: absolute; /* Faz o texto ficar sobre a imagem */
+  position: absolute; 
   color: white;
   text-align: center;
-  z-index: 1; /* Garante que o texto fique acima da imagem */
+  z-index: 1; 
 }
 
 .frase > h1 {
@@ -126,27 +141,41 @@ h1 {
   font-size: 3em;
 }
 
-.texto-me > p{
-  color:black;
-  padding: 0 10em 0 10em;
-  text-align: justify;
+.texto-me {
+  padding: 2em; /* Ajuste o padding conforme necessário */
 }
 
-.texto-me > h2{
-  color:black;
-  font-size: 30px;
+.texto-me > p {
+  color: black;
+  text-align: justify;
+  padding: 0 2em;
+}
+
+
+.texto-me > h2 {
+  font-size: 2em;
+  color: black;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .caixa {
-  background-color: rgba(255, 255, 255, 0.822);
-  margin: 0 300px 0 300px;
-  padding: 50px;
   display: flex;
+  flex-direction: row; /* Alinha a foto e o texto lado a lado */
   justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.822);
+  margin: 0 10%;
+  padding: 50px;
   border-radius: 10px;
-  
+  flex-wrap: wrap; /* Torna o conteúdo responsivo */
+}
+
+.foto_minha img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Faz a imagem ficar redonda */
+  object-fit: cover;
 }
 
 .cards {
@@ -161,7 +190,58 @@ h1 {
 .curiosidades {
   flex-direction: initial;
   display: flex;
+}
+
+@media (max-width: 436px) {
+  .texto-me {
+    padding: 16px; /* Ajuste o padding no mobile */
+  }
+  .texto > h1{
+    font-size: medium;
+    padding-left: 70px;
+  }
   
+}
+
+@media (max-width: 768px) {
+  .texto-me {
+    padding: 1em; /* Ajuste o padding no mobile */
+  }
+  .texto > p {
+    padding-left: 6em;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .texto-com-imagem {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .perfil-img {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .caixa {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .texto-me {
+    padding-left: 0;
+  }
+
+  .texto-me > p {
+    padding: 0;
+  }
+
+  .foto_minha img {
+    margin-bottom: 20px;
+  }
 }
 
 /*Final do main*/
