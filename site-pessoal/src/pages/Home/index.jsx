@@ -1,3 +1,5 @@
+import Curiosidades from '../componets/curiosidades/curiosidades';
+import Cards from '../componets/cards/cards';
 import Body from '../componets/main/body';
 import './style.css'
 
@@ -8,7 +10,6 @@ function Home() {
       {/*Cabeça do site */}
       <header>
         <div className='perfil-header'>
-          <img src="" alt="" />
           <h2>Phablo Roberto</h2>
           <img src="/public/perfilTest.jpeg" alt="" className='mini-foto'/>
         </div>
@@ -24,6 +25,13 @@ function Home() {
       {/*Copo do site */}
 
       <Body/>
+      <div>
+        <Curiosidades/>
+      </div>
+      <div>
+        <Cards/>
+      </div>
+      
     </div>
   )
 }
